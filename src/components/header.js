@@ -1,10 +1,9 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
-import styles from "./hp-layout.module.css"
-import Banner from "../components/banner"
+import styles from "./header.module.css"
 
 
-export default ({ children }) => (
+export default () => (
   <StaticQuery
     query={graphql`
       query {
@@ -17,7 +16,6 @@ export default ({ children }) => (
     `
   }
     render={data => (
-      <div className={styles.container}>
         <header>
           <Link to={`/`}>
             <h1 className={styles.title}>
@@ -29,19 +27,9 @@ export default ({ children }) => (
             <Link to={`/nicknames/`} className={styles.link}>Nicknames</Link>
             <Link to={`/photos/`} className={styles.link}>Photos</Link>
             <Link to={`/fun-facts/`} className={styles.link}>Fun Facts</Link>
+            <Link to={`/blog/`} className={styles.link}>Blog</Link>
           </nav>
         </header>
-        <Banner></Banner>
-        <main>
-          <section>
-            {children}
-          </section>
-        </main>
-        <footer>
-          <small>&copy; Rebecca Eilering | Dedicated to my sweet {data.site.siteMetadata.title}.</small>
-        </footer>
-      </div>
-      
     )}
     
   />
