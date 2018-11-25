@@ -7,11 +7,9 @@ import Layout from "../components/layout"
 export default ({ data }) => (
   <Layout>
     <section>
-      <h1>About {data.site.siteMetadata.title}</h1>
-      <p>
-        We're the only site running on your computer dedicated to showing the best
-        photos and videos of pandas eating lots of food.
-      </p>
+      <h1>{data.site.siteMetadata.title}'s Photo Gallery</h1>
+      <div className="gallery">
+      </div>
     </section>
   </Layout>
 )

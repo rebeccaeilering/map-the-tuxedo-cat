@@ -7,7 +7,7 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <section class="main-content">
+      <section>
         <h1>My Site's Files</h1>
         <table>
           <thead>

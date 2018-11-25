@@ -8,8 +8,7 @@ export default ({ data }) => {
   return (
     <Layout>
 \      <section>
-        <h1>{data.site.siteMetadata.title}'s Blog</h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h1>{data.site.siteMetadata.title} News Reel</h1>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug}>
@@ -32,7 +31,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: {
-        frontmatter: {type: { eq: "blog"}}
+        frontmatter: {type: { eq: "news"}}
       }
       sort: {
         fields: [
