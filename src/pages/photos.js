@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 import "../assets/css/main.css"
 
 import Layout from "../components/layout"
+import Gallery from "../components/gallery"
 
 export default ({ data }) => (
   <Layout>
     <section>
       <h1>{data.site.siteMetadata.title}'s Photo Gallery</h1>
-      <div className="gallery">
-      </div>
+      <Gallery />
     </section>
   </Layout>
 )
