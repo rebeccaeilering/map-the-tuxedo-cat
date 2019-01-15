@@ -21,6 +21,8 @@ export default ({ data }) => (
         <li>Mappy-toots</li>
         <li>Mappy-cakes</li>
         <li>Mappenstein</li>
+        <li>Mappertater</li>
+        <li>Mappa-ding-dong</li>
       </ul>
     </section>
   </Layout>
