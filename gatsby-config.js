@@ -21,4 +21,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/map-the-tuxedo-cat"
 }

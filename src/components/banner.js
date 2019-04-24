@@ -5,7 +5,7 @@ export default () => (
   <div className={styles.container}>
     <div className={styles.halfimage}></div>
     <div className={styles.halfcontent}>
-      <h2>I'm Map<span>I'm fucking majestic.</span></h2>
+      <h2>I'm Map<span>I'm fucking majestic. Yup!</span></h2>
 
     </div>
   </div>
